@@ -9,6 +9,6 @@ The result figures are shown as follows,
 
 | Open Sky | Urban |
 |:--------:|:-----:|
-| <img src="sky/图片1.png" alt="左图" width="500"> <br> 左图1：示例标题| <img src="urban/图片2.png" alt="右图" width="500"> <br> 右图1：示例标题|
-| <img src="sky/图片1.png" alt="左图" width="500"> <br> 左图2：示例标题| <img src="urban/图片2.png" alt="右图" width="500"> <br> 右图2：示例标题|
+| <img src="sky/S-fig-101.png" alt="左图" width="350"> <br> Fig1：Open Sky Acquisition Result| <img src="urban/U-fig2.png" alt="右图" width="350"> <br> Fig2：Urban Acquisition Result|
+| <img src="sky/Sky PDOP.png" alt="左图" width="350"> <br> Fig3：In open sky dataset, satellite 16,22,26,27,31 can be acquired| <img src="urban/Urban PDOP.png" alt="右图" width="350"> <br> Fig4：In urban dataset, satellite 1,3,11,18 can be acquired|
 
