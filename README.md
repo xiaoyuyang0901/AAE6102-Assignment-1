@@ -21,12 +21,12 @@ The result figures are shown as follows,
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig：示例标题</strong>
+    Fig：示例标题
 </p>
 <p align="center">
     <img src="sky/WSL-sky-positions.png" alt="示例图片" width="350">
     <br>  
-    <strong>Fig：示例标题</strong>
+    Fig：示例标题
 </p>
 
 
