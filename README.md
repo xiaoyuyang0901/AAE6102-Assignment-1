@@ -7,8 +7,8 @@ The GPS signal acquisition process is structured into three distinct phases: ini
 
 The result figures are shown as follows,
 
-| 左图 | 右图 |
-|------|------|
-| <img src="sky/图片1.png" alt="左图" width="500"> | <img src="urban/图片2.png" alt="右图" width="500"> |
-| <img src="sky/图片1.png" alt="左图" width="500"> | <img src="urban/图片2.png" alt="右图" width="500"> |
+| Open Sky | Urban |
+|:--------:|:-----:|
+| <img src="sky/图片1.png" alt="左图" width="500"> <br> 左图1：示例标题| <img src="urban/图片2.png" alt="右图" width="500"> <br> 右图1：示例标题|
+| <img src="sky/图片1.png" alt="左图" width="500"> <br> 左图2：示例标题| <img src="urban/图片2.png" alt="右图" width="500"> <br> 右图2：示例标题|
 
