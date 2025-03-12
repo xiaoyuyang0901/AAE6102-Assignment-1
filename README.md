@@ -17,7 +17,6 @@ The result figures are shown as follows,
 ## Task 4: Position and velocity estimation
 
 ### Open Sky
-
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
@@ -31,7 +30,6 @@ The result figures are shown as follows,
 
 
 ### Urban
-
 <p align="center">
     <img src="urban/WSL-urban-enu.png" alt="示例图片" width="600">
     <br>  
@@ -44,3 +42,26 @@ The result figures are shown as follows,
 </p>
 
 ## Task 5: Kalman-filter based positioning and velociy
+### Open Sky
+<p align="center">
+    <img src="sky/EKF-sky-enu.png" alt="示例图片" width="600">
+    <br>  
+    Fig：示例标题
+</p>
+<p align="center">
+    <img src="sky/EKF-sky-positions.png" alt="示例图片" width="350">
+    <br>  
+    Fig：示例标题
+</p>
+
+### Urban
+<p align="center">
+    <img src="urban/EKF-urban-enu.png" alt="示例图片" width="600">
+    <br>  
+    <strong>Fig：示例标题</strong>
+</p>
+<p align="center">
+    <img src="urban/EKF-urban-positions.png" alt="示例图片" width="350">
+    <br>  
+    <strong>Fig：示例标题</strong>
+</p>
