@@ -14,18 +14,25 @@ The result figures are shown as follows,
 
 
 
-## Task 4: Position and velocity estimation
 
+## Task 2: Tracking
+
+
+## Task 3: Navigation Data Decoding
+
+
+
+## Task 4: Position and velocity estimation
 ### Open Sky
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
-    Fig：示例标题
+    <strong>Fig. WSL-sky-enu.png</strong>
 </p>
 <p align="center">
     <img src="sky/WSL-sky-positions.png" alt="示例图片" width="350">
     <br>  
-    Fig：示例标题
+   <strong> Fig. WSL-sky-positions</strong>
 </p>
 
 
@@ -33,35 +40,39 @@ The result figures are shown as follows,
 <p align="center">
     <img src="urban/WSL-urban-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig：示例标题</strong>
+    <strong>Fig. WSL-urban-enu</strong>
 </p>
 <p align="center">
     <img src="urban/WSL-urban-positions.png" alt="示例图片" width="350">
     <br>  
-    <strong>Fig：示例标题</strong>
+    <strong>Fig. WSL-urban-positions</strong>
 </p>
+
+
+
+
 
 ## Task 5: Kalman-filter based positioning and velociy
 ### Open Sky
 <p align="center">
     <img src="sky/EKF-sky-enu.png" alt="示例图片" width="600">
     <br>  
-    Fig：示例标题
+    <strong>Fig. EKF-sky-enu</strong>
 </p>
 <p align="center">
     <img src="sky/EKF-sky-positions.png" alt="示例图片" width="350">
     <br>  
-    Fig：示例标题
+    <strong>Fig. EKF-sky-positions</strong>
 </p>
 
 ### Urban
 <p align="center">
     <img src="urban/EKF-urban-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig：示例标题</strong>
+    <strong>Fig. EKF-urban-enu</strong>
 </p>
 <p align="center">
     <img src="urban/EKF-urban-positions.png" alt="示例图片" width="350">
     <br>  
-    <strong>Fig：示例标题</strong>
+    <strong>Fig. EKF-urban-positions</strong>
 </p>
