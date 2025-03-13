@@ -19,8 +19,8 @@ The result figures are shown as follows,
 ### 2.1 Open Sky
 |          |       |
 |:--------:|:-----:|
-| <img src="sky/task2_sky1.png" alt="左图" width="350"> | <img src="sky/task2_sky2.png" alt="右图" width="350">|
-| <img src="sky/task2_sky3.png" alt="左图" width="350"> | <img src="sky/task2_sky4.png" alt="右图" width="350">|
+| <img src="sky/task2_sky1.png" alt="左图" width="500"> | <img src="sky/task2_sky2.png" alt="右图" width="500">|
+| <img src="sky/task2_sky3.png" alt="左图" width="500"> | <img src="sky/task2_sky4.png" alt="右图" width="500">|
 
 <p align="center">
     <img src="sky/s-fig-201-c1prn16.png" alt="示例图片" width="800">
@@ -31,8 +31,8 @@ The result figures are shown as follows,
 ### 2.2 Urban
 |  |  |
 |:--------:|:-----:|
-| <img src="urban/task2_urban1.png" alt="左图" width="350"> | <img src="urban/task2_urban2.png" alt="右图" width="350">|
-| <img src="urban/task2_urban3.png" alt="左图" width="350"> | <img src="urban/task2_urban4.png" alt="右图" width="350">|
+| <img src="urban/task2_urban1.png" alt="左图" width="500"> | <img src="urban/task2_urban2.png" alt="右图" width="500">|
+| <img src="urban/task2_urban3.png" alt="左图" width="500"> | <img src="urban/task2_urban4.png" alt="右图" width="500">|
 
 <p align="center">
     <img src="urban/u-fig-201-c1prn1.png" alt="示例图片" width="800">
