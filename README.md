@@ -23,7 +23,7 @@ The result figures are shown as follows,
 | <img src="sky/task2_sky3.png" alt="左图" width="500"> | <img src="sky/task2_sky4.png" alt="右图" width="500">|
 
 <p align="center">
-    <img src="sky/s-fig-201-c1prn16.png" alt="示例图片" width="800">
+    <img src="sky/S-fig-201-c1prn16.png" alt="示例图片" width="800">
     <br>  
     <strong>Fig. s-fig-201-c1prn16.png</strong>
 </p>
