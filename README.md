@@ -17,24 +17,32 @@ The result figures are shown as follows,
 
 ## Task 2: Tracking
 ### 2.1 Open Sky
+
+|          |       |
+|:--------:|:-----:|
+| <img src="sky/S-fig-201-c1prn16.png" alt="左图" width="500"> <br> Fig5: Open Sky: Channel-1 PRN-16 | <img src="sky/S-fig-202-c2prn26.png" alt="右图" width="500"> <br> Fig6: Open Sky: Channel-1 PRN-16|
+| <img src="sky/S-fig-203-c3prn31.png" alt="左图" width="500"> Fig7: Open Sky: Channel-3 PRN-31 | <img src="sky/S-fig-205-c5prn27.png" alt="右图" width="500"> Fig8: Open Sky: Channe5-1 PRN-27|
+
+
+<!-- <p align="center">
+    <img src="sky/S-fig-201-c1prn16.png" alt="示例图片" width="800">
+    <br>  
+    <strong>Fig. s-fig-201-c1prn16.png</strong>
+</p> -->
+
 |          |       |
 |:--------:|:-----:|
 | <img src="sky/task2_sky1.png" alt="左图" width="500"> | <img src="sky/task2_sky2.png" alt="右图" width="500">|
 | <img src="sky/task2_sky3.png" alt="左图" width="500"> | <img src="sky/task2_sky4.png" alt="右图" width="500">|
 
-<p align="center">
-    <img src="sky/S-fig-201-c1prn16.png" alt="示例图片" width="800">
-    <br>  
-    <strong>Fig. s-fig-201-c1prn16.png</strong>
-</p>
 
 ### 2.2 Urban
-|  |  |
+|          |       |
 |:--------:|:-----:|
-| <img src="urban/task2_urban1.png" alt="左图" width="500"> | <img src="urban/task2_urban2.png" alt="右图" width="500">|
-| <img src="urban/task2_urban3.png" alt="左图" width="500"> | <img src="urban/task2_urban4.png" alt="右图" width="500">|
+| <img src="urban/u-fig-201-c1prn1.png" alt="左图" width="500"> Fig9: Open Sky: Channel-1 PRN-1| <img src="urban/u-fig-202-c2prn3.png" alt="右图" width="500"> Fig10: Open Sky: Channel-1 PRN-3|
+| <img src="urban/u-fig-203-c3prn11.png" alt="左图" width="500"> Fig11: Open Sky: Channel-1 PRN-11 | <img src="urban/u-fig-204-c4prn18.png" alt="右图" width="500"> Fig12: Open Sky: Channel-4 PRN-18|
 
-<p align="center">
+<!-- <p align="center">
     <img src="urban/u-fig-201-c1prn1.png" alt="示例图片" width="800">
     <br>  
     <strong>Fig. u-fig-201-c1prn1</strong>
@@ -48,7 +56,12 @@ The result figures are shown as follows,
     <img src="urban/u-fig-203-c3prn11.png" alt="示例图片" width="800">
     <br>  
     <strong>Fig. u-fig-201-c1prn1</strong>
-</p>
+</p> -->
+|  |  |
+|:--------:|:-----:|
+| <img src="urban/task2_urban1.png" alt="左图" width="500"> | <img src="urban/task2_urban2.png" alt="右图" width="500">|
+| <img src="urban/task2_urban3.png" alt="左图" width="500"> | <img src="urban/task2_urban4.png" alt="右图" width="500">|
+
 
 ### 2.3 Impact of Urban Interference
 - Multipath Effects: Reflected signals cause constructive and destructive interference, leading to distorted correlation peaks.
