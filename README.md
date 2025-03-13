@@ -1,5 +1,7 @@
 # AAE6102-Assignment-1
-## Satellite Communication and Navigation (2024/25 Semester 2) - YANG Xiaoyu(24145927r)
+
+**Author:** YANG Xiaoyu
+**Student ID:** 24145927r
 
 ## Task 1: Acquisition
 The results of data acquisition are shown in Figures 1 to 4:
