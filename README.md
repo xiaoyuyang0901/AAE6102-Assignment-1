@@ -62,17 +62,25 @@ Urban environments increase signal variability and tracking instability, with PR
 |:--------:|:-----:|
 | <img src="sky/acf-sky.png" alt="左图" width="460">  **Fig13:** Open Sky: Correlation Results with Multi-correlator| <img src="urban/acf-urban.png" alt="右图" width="420"> **Fig14:** Urban: Correlation Results with Multi-correlator |
 
+Figures 13 and 14 compare the ACF results from multiple correlators for satellites tracked in open sky (Fig. 13) and urban (Fig. 14) environments. Key observations include:
 
+- **ACF Magnitudes:**
+ACF values in urban areas are significantly smaller than in open sky, reflecting the higher interference and signal attenuation in urban environments.
+Open sky signals benefit from minimal propagation interference, leading to higher ACF peaks.
+
+- **ACF Variations:**
+Urban ACF values exhibit smaller variations, likely due to the improved quality of the antenna and receiver used in the urban experiment. This ensures more consistent signal reception despite the challenging environment.
+
+Urban environments reduce ACF peak amplitudes due to interference but result in more consistent ACF values, likely due to better equipment used for signal reception.
 
 #### 2.4 Impact of Urban Interference
-- Multipath Effects: Reflected signals cause constructive and destructive interference, leading to distorted correlation peaks.
-- NLOS Receptions: Signals arriving via indirect paths introduce biases in the pseudorange measurements.
-- Signal Attenuation: Buildings and other structures can attenuate the signal, reducing the signal-to-noise ratio (SNR) for satellites of Channel 3 and Channel 4.
+Urban environments significantly affect signal quality and tracking performance due to several factors:
 
-#### 2.5 Discussion
-- In the open-sky environment, the DLL performs well with clear correlation peaks, allowing for accurate tracking.
-- In the urban environment, the DLL performance degrades due to interference, resulting in less accurate and less stable tracking.
-- Multiple correlators help in maintaining lock by providing a more robust estimate of the signal phase.
+- **Multipath Effects:** Reflected signals cause constructive and destructive interference, distorting correlation peaks.
+- **NLOS Receptions:** Indirect signal paths introduce biases in pseudorange measurements, reducing accuracy.
+- **Signal Attenuation:** Buildings and structures attenuate signals, lowering the signal-to-noise ratio (SNR).
+
+In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform reliably, with clear correlation peaks enabling accurate and stable tracking. However, in urban settings, DLL performance degrades due to interference, resulting in reduced tracking accuracy and stability. The use of multiple correlators helps mitigate these challenges by providing more robust signal phase estimates, maintaining signal lock even in challenging conditions.
 
 
 ## Task 3: Navigation Data Decoding
