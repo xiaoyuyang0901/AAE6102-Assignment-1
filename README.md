@@ -89,8 +89,49 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 
 ## Task 3: Navigation Data Decoding
+#### 3.1 GPS Satellite Ephemeris Data for Open Sky Dataset (PRN 16, 26, 27, 31)
+| Parameter      | Description | PRN 16       | PRN 26       | PRN 27       | PRN 31       |
+|----------------|-------------|--------------|--------------|--------------|--------------|
+| **TOW**       | Time of Week (s) | 390108, ... | 390108, ... | 390108, ... | 390108, ... |
+| **weeknum**    | GPS Week Number | 1155         | 1155         | 1155         | 1155         |
+| **IODC**       | Issue of Data Clock | 9          | 113         | 30          | 83          |
+| **TGD**        | Time Group Delay (s) | -1.024e-08  | 6.984e-09   | 1.862e-09   | -1.303e-08  |
+| **toc**        | Clock Data Reference Time (s) | 396000      | 396000      | 396000      | 396000      |
+| **af2**        | Clock Drift Rate (s/s²) | 0            | 0            | 0            | 0            |
+| **af1**        | Clock Drift (s/s) | -6.366e-12   | 3.979e-12    | -5.002e-12   | -1.932e-12   |
+| **af0**        | Clock Bias (s) | -0.0004069   | 0.0001448    | -0.0002061   | -0.0001448   |
+| **Crs**        | Sine Harmonic Correction Term to Orbit Radius (m) | 23.34      | 21.25       | 70.43       | 30.71       |
+| **deltan**     | Mean Motion Difference (rad/s) | 4.246e-09   | 5.051e-09    | 4.030e-09    | 4.807e-09    |
+| **M0**         | Mean Anomaly at Reference Time (rad) | 0.7181    | 1.7355      | -0.1730     | 2.8245      |
+| **Cuc**        | Cosine Harmonic Correction to Argument of Latitude (rad) | 1.389e-06 | 1.152e-06  | 3.730e-06  | 1.460e-06  |
+| **ecc**        | Eccentricity | 0.0122        | 0.0062        | 0.0095       | 0.0102       |
+| **Cus**        | Sine Harmonic Correction to Argument of Latitude (rad) | 7.687e-06 | 7.040e-06  | 8.242e-06  | 7.228e-06  |
+| **sqrta**      | Square Root of Semi-Major Axis (m^1/2) | 5153.771   | 5153.636    | 5153.652    | 5153.622    |
+| **toe**        | Time of Ephemeris (s) | 396000      | 396000      | 396000      | 396000      |
+| **Cic**        | Cosine Harmonic Correction to Inclination (rad) | -1.005e-07 | -2.048e-08 | 1.080e-07  | -1.136e-07 |
+| **omegae**     | Longitude of Ascending Node (rad) | -1.674     | -1.812      | -0.717      | -2.787      |
 
-
+#### 3.2 GPS Satellite Ephemeris Data for Urban Dataset (PRN 1, 3, 7, 11)
+| Parameter      | Description | PRN 1        | PRN 3        | PRN 7        | PRN 11       |
+|----------------|-------------|--------------|--------------|--------------|--------------|
+| **TOW**       | Time of Week (s) | 449358, ... | 449358, ... | 449358, ... | 449358, ... |
+| **weeknum**    | GPS Week Number | 1032         | 1032         | 1032         | 1032         |
+| **IODC**       | Issue of Data Clock | 72          | 72          | 33          | 83          |
+| **TGD**        | Time Group Delay (s) | 5.587e-09   | 1.862e-09   | -1.117e-08  | -1.257e-08  |
+| **toc**        | Clock Data Reference Time (s) | 453600      | 453600      | 453600      | 453600      |
+| **af2**        | Clock Drift Rate (s/s²) | 0            | 0            | 0            | 0            |
+| **af1**        | Clock Drift (s/s) | -9.436e-12   | -1.136e-12   | -7.617e-12   | 8.526e-12    |
+| **af0**        | Clock Bias (s) | -3.489e-05   | 0.0001863    | -3.951e-05   | -0.0005900   |
+| **Crs**        | Sine Harmonic Correction Term to Orbit Radius (m) | -120.71    | -62.09      | 6.46        | -67.12      |
+| **deltan**     | Mean Motion Difference (rad/s) | 4.190e-09   | 4.447e-09   | 4.891e-09   | 5.890e-09   |
+| **M0**         | Mean Anomaly at Reference Time (rad) | 0.5179    | -0.4303     | -0.0807     | -0.1989     |
+| **Cuc**        | Cosine Harmonic Correction to Argument of Latitude (rad) | -6.334e-06 | -3.090e-06 | 3.091e-07  | -3.604e-06 |
+| **ecc**        | Eccentricity | 0.008923      | 0.002226     | 0.012823     | 0.016643     |
+| **Cus**        | Sine Harmonic Correction to Argument of Latitude (rad) | 5.301e-06 | 1.155e-05  | 8.014e-06  | 1.512e-06  |
+| **sqrta**      | Square Root of Semi-Major Axis (m^1/2) | 5153.655   | 5153.777    | 5153.742    | 5153.706    |
+| **toe**        | Time of Ephemeris (s) | 453600      | 453600      | 453600      | 453600      |
+| **Cic**        | Cosine Harmonic Correction to Inclination (rad) | -7.450e-08 | 1.117e-08  | 4.284e-08  | -3.166e-07 |
+| **omegae**     | Longitude of Ascending Node (rad) | -3.106     | -2.064      | 0.04408     | 2.725       |
 
 ## Task 4: Position and velocity estimation
 #### 4.1 Open Sky
