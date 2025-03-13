@@ -23,22 +23,16 @@ The result figures are shown as follows,
 | <img src="sky/S-fig-201-c1prn16.png" alt="左图" width="500"> <br> **Fig5:** Open Sky: Channel-1 PRN-16 | <img src="sky/S-fig-202-c2prn26.png" alt="右图" width="500"> <br> **Fig6:** Open Sky: Channel-2 PRN-26|
 | <img src="sky/S-fig-205-c5prn27.png" alt="右图" width="500"> **Fig7:** Open Sky: Channe5-1 PRN-27 | <img src="sky/S-fig-203-c3prn31.png" alt="左图" width="500"> **Fig8:** Open Sky: Channel-3 PRN-31 | 
 
-Figures 5 to 8 present multiple graphs showing the tracking results for different satellites (PRN16, PRN26, PRN27, and PRN31) in an open sky environment. The performance of each satellite is visualized through six different types of plots:
+Figures 5 to 8 illustrate the tracking results for satellites (PRN16, PRN26, PRN27, and PRN31) in an open sky environment:
 
-- Discrete-Time Scatter Plot
-The I/Q constellation diagrams for each satellite clearly illustrate the signal phase distribution. The dense and symmetric distribution of points indicates good signal quality and high demodulation stability.
-- Navigation Message Bits
-Each graph displays the navigation bit sequences for the satellites. The bit plots show clear high and low transitions, reflecting reliable signal demodulation without noticeable data interruptions.
-- Raw PLL Discriminator Output
-The raw PLL discriminator outputs show signal fluctuations over time, with stable overall amplitudes. This indicates effective phase tracking performance.
-- Correlation Results 
-The correlation results show the Early, Prompt, and Late correlation branches. The three curves are clearly separated, with the Prompt branch showing significantly higher amplitude than the other two. This confirms good signal acquisition and tracking performance.
-- Raw DLL Discriminator Output
-The raw DLL discriminator outputs exhibit some noise over time, but the amplitude variations are within expected ranges, demonstrating sufficient code tracking capability.
-- Filtered DLL Discriminator Output
-The filtered DLL outputs are smoother compared to the raw outputs. Noise is significantly reduced, and amplitude fluctuations are minimized, indicating the effectiveness of the filtering process in improving code tracking quality.
+- Scatter Plots: Dense and symmetric I/Q constellations indicate good signal quality and stable demodulation.
+- Navigation Bits: Clear high/low transitions demonstrate reliable signal decoding without interruptions.
+- Raw PLL Outputs: Stable amplitudes reflect effective phase tracking.
+- Correlation Results: Well-separated Early, Prompt, and Late branches confirm strong signal acquisition.
+- Raw DLL Outputs: Some noise is present, but amplitude variations remain within expected ranges.
+- Filtered DLL Outputs: Smoother signals with reduced noise and fluctuations highlight effective filtering.
 
-The signals from satellites PRN16,  PRN26, PRN27, and PRN31 perform well under open sky conditions. The DLL and PLL tracking results exhibit stable performance, with filtered outputs improving overall signal stability and reliability. These results demonstrate the excellent performance of the signal processing system in open sky environments.
+Overall, PRN16, PRN26, PRN27, and PRN31 exhibit excellent performance in open sky conditions, with stable DLL and PLL tracking and reliable signal processing.
 
 
 <!-- |          |       |
