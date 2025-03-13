@@ -2,10 +2,12 @@
 ## Satellite Communication and Navigation (2024/25 Semester 2) - YANG Xiaoyu(24145927r)
 
 ## Task 1: Acquisition
-The GPS signal acquisition process is structured into three distinct phases: initialization, initial acquisition, and precision refinement.
+The results of data acquisition are shown in Figures 1 to 4:
 
-
-The result figures are shown as follows,
+- **Open Sky Dataset**
+As shown in Figures 1 and 3, satellites with PRN numbers 16, 22, 26, 27, and 31 can be successfully acquired in the open sky environment. These satellites have clear acquisition metrics above the threshold, indicating strong signal reception.
+- **Urban Dataset**
+Figures 2 and 4 demonstrate that, in the urban environment, satellites with PRN numbers 1, 3, 11, and 18 can be acquired. Due to urban interference, fewer satellites are successfully acquired compared to the open sky environment, and the acquisition metrics for these satellites are generally lower.
 
 | Open Sky | Urban |
 |:--------:|:-----:|
