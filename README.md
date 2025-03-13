@@ -21,7 +21,7 @@ Figures 2 and 4 demonstrate that, in the urban environment, satellites with PRN 
 
 
 ## Task 2: Tracking
-#### 2.1 Open Sky
+### 2.1 Open Sky
 
 |          |       |
 |:--------:|:-----:|
@@ -46,7 +46,7 @@ Overall, PRN16, PRN26, PRN27, and PRN31 exhibit excellent performance in open sk
 | <img src="sky/task2_sky3.png" alt="左图" width="500"> | <img src="sky/task2_sky4.png" alt="右图" width="500">| -->
 
 
-#### 2.2 Urban
+### 2.2 Urban
 |          |       |
 |:--------:|:-----:|
 | <img src="urban/u-fig-201-c1prn1.png" alt="左图" width="500"> **Fig9:** Open Sky: Channel-1 PRN-1| <img src="urban/u-fig-202-c2prn3.png" alt="右图" width="500"> **Fig10:** Open Sky: Channel-1 PRN-3|
@@ -61,7 +61,7 @@ Compared to open sky, the urban tracking results show notable challenges:
 
 Urban environments increase signal variability and tracking instability, with PRN11 and PRN18 showing significant degradation due to multipath and obstructions.
 
-#### 2.3 ACF
+### 2.3 ACF
 
 | Open Sky | Urban |
 |:--------:|:-----:|
@@ -78,7 +78,7 @@ Urban ACF values exhibit smaller variations, likely due to the improved quality 
 
 Urban environments reduce ACF peak amplitudes due to interference but result in more consistent ACF values, likely due to better equipment used for signal reception.
 
-#### 2.4 Impact of Urban Interference
+### 2.4 Impact of Urban Interference
 Urban environments significantly affect signal quality and tracking performance due to several factors:
 
 - **Multipath Effects:** Reflected signals cause constructive and destructive interference, distorting correlation peaks.
@@ -89,7 +89,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 
 ## Task 3: Navigation Data Decoding
-#### 3.1 GPS Satellite Ephemeris Data for Open Sky Dataset (PRN 16, 26, 27, 31)
+### 3.1 GPS Satellite Ephemeris Data for Open Sky Dataset (PRN 16, 26, 27, 31)
 | Parameter      | Description | PRN 16       | PRN 26       | PRN 27       | PRN 31       |
 |----------------|-------------|--------------|--------------|--------------|--------------|
 | **TOW**       | Time of Week (s) | 390108, ... | 390108, ... | 390108, ... | 390108, ... |
@@ -111,7 +111,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 | **Cic**        | Cosine Harmonic Correction to Inclination (rad) | -1.005e-07 | -2.048e-08 | 1.080e-07  | -1.136e-07 |
 | **omegae**     | Longitude of Ascending Node (rad) | -1.674     | -1.812      | -0.717      | -2.787      |
 
-#### 3.2 GPS Satellite Ephemeris Data for Urban Dataset (PRN 1, 3, 7, 11)
+### 3.2 GPS Satellite Ephemeris Data for Urban Dataset (PRN 1, 3, 7, 11)
 | Parameter      | Description | PRN 1        | PRN 3        | PRN 7        | PRN 11       |
 |----------------|-------------|--------------|--------------|--------------|--------------|
 | **TOW**       | Time of Week (s) | 449358, ... | 449358, ... | 449358, ... | 449358, ... |
@@ -134,7 +134,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 | **omegae**     | Longitude of Ascending Node (rad) | -3.106     | -2.064      | 0.04408     | 2.725       |
 
 ## Task 4: Position and velocity estimation
-#### 4.1 Open Sky
+### 4.1 Open Sky
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
@@ -146,7 +146,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 | <img src="sky/WSL-sky-positions.png" alt="左图" width="350"> <br> Fig1: Open Sky Acquisition Result| <img src="sky/WSL-sky-gt.png" alt="右图" width="500"> <br> Fig2: Urban Acquisition Result|
 
 
-#### 4.2 Urban
+### 4.2 Urban
 <p align="center">
     <img src="urban/WSL-urban-enu.png" alt="示例图片" width="600">
     <br>  
@@ -161,7 +161,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 
 ## Task 5: Kalman-filter based positioning and velociy
-#### 5.1 Open Sky
+### 5.1 Open Sky
 <p align="center">
     <img src="sky/EKF-sky-enu.png" alt="示例图片" width="600">
     <br>  
@@ -174,7 +174,7 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 
 
-#### 5.2 Urban
+### 5.2 Urban
 <p align="center">
     <img src="urban/EKF-urban-enu.png" alt="示例图片" width="600">
     <br>  
