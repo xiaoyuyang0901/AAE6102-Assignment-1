@@ -138,26 +138,41 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig. WSL-sky-enu.png</strong>
+    <strong>Fig15:</strong> WSL-sky-enu.png
+</p>
+
+<p align="center">
+    <img src="sky/wls-vel-sky.png" alt="示例图片" width="450">
+    <br>  
+    <strong>Fig16:</strong> wls-vel-sky.png
 </p>
 
 |  |  |
 |:--------:|:-----:|
-| <img src="sky/WSL-sky-positions.png" alt="左图" width="350"> <br> Fig1: Open Sky Acquisition Result| <img src="sky/WSL-sky-gt.png" alt="右图" width="500"> <br> Fig2: Urban Acquisition Result|
+| <img src="sky/WSL-sky-positions.png" alt="左图" width="350"> <br> **Fig17:** Open Sky Acquisition Result| <img src="sky/WSL-sky-gt.png" alt="右图" width="500"> <br> **Fig18:** Urban Acquisition Result|
 
 
 ### 4.2 Urban
 <p align="center">
     <img src="urban/WSL-urban-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig. WSL-urban-enu</strong>
+    <strong>Fig19:</strong> WSL-urban-enu
+</p>
+
+<p align="center">
+    <img src="urban/wls-vel-urban.png" alt="示例图片" width="450">
+    <br>  
+    <strong>Fig20:</strong> wls-vel-sky.png
 </p>
 
 |  |  |
 |:--------:|:-----:|
-| <img src="urban/WSL-urban-positions.png" alt="左图" width="350"> <br> Fig1: Open Sky Acquisition Result| <img src="urban/WSL-urban-gt.png" alt="右图" width="500"> <br> Fig2: Urban Acquisition Result|
+| <img src="urban/WSL-urban-positions.png" alt="左图" width="350"> <br> **Fig21:** Open Sky Acquisition Result| <img src="urban/WSL-urban-gt.png" alt="右图" width="500"> <br> **Fig22:** Urban Acquisition Result|
 
+### 4.3 Discussion
 
+Both position and velocity errors are greater in urban scenarios than in open-sky ones. This is mainly attributed to the pseudorange and Doppler frequency measurement errors caused by multipath effects and non-line-of-sight (NLOS) propagation, which make accurate location determination more challenging.
+In urban settings, the Doppler frequency for channel 2 may exceed 4.0e3, which is much higher than that of the other channels. This discrepancy prevents the WLS receiver velocity from converging and introduces significant errors. However, as there are only four acquired satellites, I cannot perform fault detection and exclusion.
 
 
 ## Task 5: Kalman-filter based positioning and velociy
@@ -165,12 +180,18 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 <p align="center">
     <img src="sky/EKF-sky-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig. EKF-sky-enu</strong>
+    <strong>Fig:23</strong> EKF-sky-enu
+</p>
+
+<p align="center">
+    <img src="sky/EKF-vel-sky.png" alt="示例图片" width="450">
+    <br>  
+    <strong>Fig24:</strong> wls-vel-sky.png
 </p>
 
 |  |  |
 |:--------:|:-----:|
-| <img src="sky/EKF-sky-positions.png" alt="左图" width="350"> <br> Fig1: Open Sky Acquisition Result| <img src="sky/EKF-sky-gt.png" alt="右图" width="500"> <br> Fig2: Urban Acquisition Result|
+| <img src="sky/EKF-sky-positions.png" alt="左图" width="350"> <br> **Fig25:** Open Sky Acquisition Result| <img src="sky/EKF-sky-gt.png" alt="右图" width="500"> <br> **Fig26:** Urban Acquisition Result|
 
 
 
@@ -178,9 +199,15 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 <p align="center">
     <img src="urban/EKF-urban-enu.png" alt="示例图片" width="600">
     <br>  
-    <strong>Fig. EKF-urban-enu</strong>
+    <strong>Fig:27</strong> EKF-urban-enu
+</p>
+
+<p align="center">
+    <img src="urban/EKF-vel-urban.png" alt="示例图片" width="450">
+    <br>  
+    <strong>Fig28:</strong> wls-vel-sky.png
 </p>
 
 |  |  |
 |:--------:|:-----:|
-| <img src="urban/EKF-urban-positions.png" alt="左图" width="350"> <br> Fig1: Open Sky Acquisition Result| <img src="urban/EKF-urban-gt.png" alt="右图" width="500"> <br> Fig2: Urban Acquisition Result|
+| <img src="urban/EKF-urban-positions.png" alt="左图" width="350"> <br> **Fig29:** Open Sky Acquisition Result| <img src="urban/EKF-urban-gt.png" alt="右图" width="500"> <br> **Fig30:** Urban Acquisition Result|
