@@ -133,8 +133,10 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 | **Cic**        | Cosine Harmonic Correction to Inclination (rad) | -7.450e-08 | 1.117e-08  | 4.284e-08  | -3.166e-07 |
 | **omegae**     | Longitude of Ascending Node (rad) | -3.106     | -2.064      | 0.04408     | 2.725       |
 
-## Task 4: Position and velocity estimation
+## Task 4: Position and velocity estimation (WLS)
+In this taks, the position and velocity estimation results are presented based on the Weighted Least Squares (WLS) method. The results include both open sky and urban scenarios, where the estimated coordinates and their variations in the UTM system are analyzed. The corresponding figures illustrate the accuracy and distribution of the estimated positions under different environments.
 ### 4.1 Open Sky Resluts (WLS)
+Figures 15-17 illustrate the positioning results in the open sky environment, which demonstrate high stability and accuracy. Coordinate variations, as shown in Figure 15, are within ±20m across all components (East, North, and Up). The position plots in Figures 16  reveal tightly clustered points around the mean position (Lat: 22°19'42.3835", Lng: 114°10'16.9629", Hgt: +5.7m). Horizontal scatter is limited to ±10m, and vertical variation to ±30m, achieving approximately 20 times better precision compared to the urban environment.
 <p align="center">
     <img src="sky/WSL-sky-enu.png" alt="示例图片" width="600">
     <br>  
@@ -149,10 +151,12 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 |  |  |
 |:--------:|:-----:|
-| <img src="sky/WSL-sky-positions.png" alt="左图" width="350"> <br> **Fig16:** Positions for Open Sky in UTM System Based on WLS| <img src="sky/WSL-sky-gt.png" alt="右图" width="500"> <br> **Fig17:** Open Sky Result|
+| <img src="sky/WSL-sky-positions.png" alt="左图" width="350"> <br> **Fig16:** Positions for Open Sky in UTM System Based on WLS| <img src="sky/WSL-sky-gt.png" alt="右图" width="500"> <br> **Fig17:** The position result and ground truth of Open Sky|
 
 
 ### 4.2 Urban Resluts (WLS)
+
+Figures 18-20 depict the positioning results in the urban environment, which show significant variations and scatter due to challenging signal conditions. As shown in Figure 18, the East component fluctuates by ±250m, the Up component by ±100m, and the North component by ±50m. The position plots in Figures 19 indicate wide scatter around the mean position (Lat: 22°19'10.4142", Lng: 114°12'27.3914", Hgt: -33.9m), spanning ±200m horizontally and ±400m vertically, highlighting the degraded positioning performance in urban environments.
 <p align="center">
     <img src="urban/WSL-urban-enu.png" alt="示例图片" width="600">
     <br>  
@@ -167,16 +171,14 @@ In contrast, open-sky environments allow the Delay-Locked Loop (DLL) to perform 
 
 |  |  |
 |:--------:|:-----:|
-| <img src="urban/WSL-urban-positions.png" alt="左图" width="350"> <br> **Fig19:**  Positions for Urban in UTM System Based on WLS| <img src="urban/WSL-urban-gt.png" alt="右图" width="500"> <br> **Fig20:** Urban Acquisition Result|
+| <img src="urban/WSL-urban-positions.png" alt="左图" width="350"> <br> **Fig19:**  Positions for Urban in UTM System Based on WLS| <img src="urban/WSL-urban-gt.png" alt="右图" width="500"> <br> **Fig20:** The position result and ground truth of Urban|
 
 ### 4.3 Discussion
-
-Both position and velocity errors are greater in urban scenarios than in open-sky ones. This is mainly attributed to the pseudorange and Doppler frequency measurement errors caused by multipath effects and non-line-of-sight (NLOS) propagation, which make accurate location determination more challenging.
-In urban settings, the Doppler frequency for channel 2 may exceed 4.0e3, which is much higher than that of the other channels. This discrepancy prevents the WLS receiver velocity from converging and introduces significant errors. However, as there are only four acquired satellites, I cannot perform fault detection and exclusion.
+Position errors are larger in urban scenarios compared to open-sky environments. This is primarily due to measurement errors in pseudorange and Doppler frequency, caused by multipath effects and non-line-of-sight (NLOS) propagation, which significantly complicate accurate location estimation.
 
 
-## Task 5: Kalman-filter based positioning and velociy
-In this task, I implemented an Extended Kalman Filter (EKF) using pseudorange and Doppler measurements to estimate the user’s position and velocity.
+## Task 5: Kalman-filter based positioning and velociy (EKF)
+In this task, I implemented the Extended Kalman Filter (EKF) using pseudorange and Doppler measurements to estimate the user’s position and velocity.
 ### 5.1 Open Sky Resluts (EKF)
 <p align="center">
     <img src="sky/EKF-sky-enu.png" alt="示例图片" width="600">
@@ -192,7 +194,7 @@ In this task, I implemented an Extended Kalman Filter (EKF) using pseudorange an
 
 |  |  |
 |:--------:|:-----:|
-| <img src="sky/EKF-sky-positions.png" alt="左图" width="350"> <br> **Fig22:** Positions  for Open Sky in UTM System Based on EKF| <img src="sky/EKF-sky-gt.png" alt="右图" width="500"> <br> **Fig23:** Open Sky Result|
+| <img src="sky/EKF-sky-positions.png" alt="左图" width="350"> <br> **Fig22:** Positions  for Open Sky in UTM System Based on EKF| <img src="sky/EKF-sky-gt.png" alt="右图" width="500"> <br> **Fig23:** The position result and ground truth of Open Sky|
 
 
 
@@ -211,4 +213,7 @@ In this task, I implemented an Extended Kalman Filter (EKF) using pseudorange an
 
 |  |  |
 |:--------:|:-----:|
-| <img src="urban/EKF-urban-positions.png" alt="左图" width="350"> <br> **Fig25:** Positions for Urban in UTM System Based on EKF| <img src="urban/EKF-urban-gt.png" alt="右图" width="500"> <br> **Fig26:** Urban Result|
+| <img src="urban/EKF-urban-positions.png" alt="左图" width="350"> <br> **Fig25:** Positions for Urban in UTM System Based on EKF| <img src="urban/EKF-urban-gt.png" alt="右图" width="500"> <br> **Fig26:** The position result and ground truth of Urban|
+
+### 5.3 Discussion
+In the urban environment, the maximum error of EKF is smaller than that of WLS. This is due to EKF's ability to integrate data from multiple epochs and provided smoother estimates over time, thereby improving the robustness and accuracy of positioning.
